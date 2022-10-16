@@ -79,7 +79,11 @@ function checkCookie() {
     if (user != "" && user != null) {
       alert("Hello Mr." + user);
       setCookie("username", user, 30);
+    } else {
+      alert("Your name must not be blank!!");
+      checkCookie();
     }
+    
   }
 }
 
