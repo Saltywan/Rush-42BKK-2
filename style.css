@@ -19,30 +19,87 @@ body{
     align-items: center;
     /* background-color: #000000; */
     color: #ffffff;
-
-}
-.main::before{
     background-image: url("assets/images/starfall-gif-46.gif");
     -webkit-background-image: url("assets/images/starfall-gif-46.gif");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
-    z-index: -1;
-    position: absolute;
-    width:100%;
-    height: 100%;
-    content:'';
-    filter: blur(5px);
-    -webkit-filter: blur(5px);
-    /* backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px); */
+
 }
+
+.main-pro {
+  width: 300px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
 h1{
+    position: absolute;
+    top: 10%;
     font-size: 3rem;
-    font-weight: 600;
-    color: #fff;
+    font-weight: 700;
+    text-decoration-color: #5f40f7ff;
+    text-decoration-style: double;
+    color: #000000;
+    background: linear-gradient(271deg,#a0e9ff 30%,#c5a4ea 50%,#f093b0 70%,#edca85 94%);
+    border-radius: 8px;
     text-align: center;
     margin: 0;
-    padding: 0;
+    padding: 15px;
+    transition: all 0.5s ease-in-out;
+    box-shadow: 15px 15px grey;
 }
+
+h1:hover{
+    text-decoration: underline;
+    transform: scale(1.1);
+}
+
+h2{
+  font-size: 2rem;
+}
+
+         
+button {
+  position: relative;
+  cursor: pointer;
+  background-image: linear-gradient(to right, #1FA2FF 0%, #12D8FA  51%, #1FA2FF  100%);
+  margin: 2.5vw;
+  font-size: 1.25rem;
+  font-weight:650;
+  padding: 15px 35px;
+  text-align: center;
+/*   text-transform: uppercase; */
+/*   background-size: 200% auto; */
+  color: #363636;            
+  border-radius: 15px;
+  display: block;
+  transition: text-decoration .25s, text-decoration-color .25s, transform .85s ease-in-out;
+  box-shadow: 5px 10px white;
+}
+
+button:first-child{
+  background-image: linear-gradient(to right, #f76cf9 0%, #cdb3ff  51%, #bd99ff  100%);
+}
+
+button:after{
+  background-color: #ee8181;
+  position: absolute;
+  bottom: 5px;
+  content: "";
+  height: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all .5s;
+  width: 0;
+}
+
+button:hover:after{
+  width: 70%;
+}
+
+button:hover{
+  transform: scale(1.125);
+}
+         

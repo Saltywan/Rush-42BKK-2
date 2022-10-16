@@ -1,16 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style.css" rel="stylesheet">
-    <title>UwUScript's Resume</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="assets/images/favicon.png">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script defer>
+    window.addEventListener('load', () => {
+      AOS.init({
+        duration: 1000,
+        easing: 'ease-in-out',
+        once: true,
+        mirror: false
+      })
+    });
+  </script>
+  <link href="style.css" rel="stylesheet">
+  <title>UwUScript's Resume</title>
 </head>
+
 <body>
-    <div class="main">
-        <h1>42Bangkok</h1>
+  <div class="main">
+    <h1 data-aos="zoom-out" data-aos-delay="100">42Bangkok</h1>
+    <h2 data-aos="zoom-out" data-aos-delay="100">Rush-42BKK</h2>
+    <div class="main-pro">
+      <button onclick="location.href='thpopit/index.html'" data-aos="zoom-out" data-aos-delay="50">thpopit</button>
+      <button onclick="location.href='psoontr/index.html'" data-aos="zoom-out" data-aos-delay="50">posoontr</button>
     </div>
 
+  </div>
+
+
+  <!-- unpkg -->
+  <script src="https://unpkg.com/@barba/core"></script>
+  <!-- jsdelivr -->
+  <script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
+
 </body>
+
 </html>

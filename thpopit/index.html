@@ -1,13 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style.css" rel="stylesheet">
-    <title>thpopit's Resume</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="../assets/images/favicon.png">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="style.css" rel="stylesheet">
+  <script src="index.js" defer></script>
+  <title>thpopit's Resume</title>
 </head>
-<body>
-    
+<header>
+  <h1 class="rainbow_text_animated">tpopit</h1>
+  <nav data-aos="fade-down" data-aos-delay="100">
+    <a href="#mainh" class="mainh nav">Home</a>
+    <a href="#abouth" class="abouth nav">About</a>
+    <a href="#xph" class="xph nav">Experience</a>
+    <a href="#contacth" class="contacth nav">Contact</a>
+    <a href="../index.html"><i class="fa-solid fa-right-from-bracket"></i></a>
+  </nav>
+</header>
+
+<body onload="checkCookie()">
+  <section class="mainbg" id="mainh">
+    <div class="main">
+      <div class="maincon" data-aos="fade-down" data-aos-delay="100">
+        <h1>Hi, </h1>
+        <h2>I'm <span class="rainbow_text_animated">Thanapol Popit</span></h2>
+        <h3>Secondary 6</h3>
+      </div>
+      <div class="mainpro" data-aos="flip-left" data-aos-delay="100">
+        <img src="../assets/images/tpoppro.jpg">
+      </div>
+    </div>
+  </section>
+
+  <section class="aboutbg" id="abouth">
+    <div class="about">
+      <div class="aboutpan">
+        <h1 data-aos="flip-down">About me</h1>
+        <img src="../assets/images/r1ck.png" alt="my face when I know that tliangso is the evaluator"
+          data-aos="flip-down" data-aos-delay="100" id="img">
+      </div>
+      <div class="aboutcon">
+        <div>
+          <div class="about-a" data-aos="zoom-in" data-aos-delay="100">
+            <h2>Nice to meet you!</h2>
+            <p style="overflow: visible;">Hello, my name is <span class="tooltip">Thanapol Popit<span
+                  class="rainbow_text_animated ttxt">(tpopit)</span>
+              </span> and my nickname is Wan. I'm currently in High School in the twelfth grade. I’m interested in Web
+              Development, AI/Machine learning, and Cybersecurity. I also like to play games in my free time.</p>
+          </div>
+          <div class="about-b" data-aos="zoom-in-up" data-aos-delay="100">
+            <h3>Basic Information</h3>
+            <div class="li">
+              <ul>
+                <li><i class="fa-solid fa-caret-right"></i>Name: Thanapol Popit</li>
+                <li><i class="fa-solid fa-caret-right"></i>Birthday: July 19th 2005</li>
+                <li><i class="fa-solid fa-caret-right"></i>Age: 17</li>
+              </ul>
+              <ul>
+                <li><i class="fa-solid fa-caret-right"></i>Job Title: Student</li>
+                <li><i class="fa-solid fa-caret-right"></i>City: Samutprakarn, Thailand</li>
+                <li><i class="fa-solid fa-caret-right"></i>Phone: 08x xxx xxxx</li>
+              </ul>
+            </div>
+            <ul class="social-ico">
+              <li><a href="https://github.com/Saltywan/" target="_blank"><i class="fa-brands fa-github"
+                    style="color: black;"></i></a></li>
+              <li><a href="https://www.facebook.com/wan5TH" target="_blank"><i class="fa-brands fa-facebook"
+                    style="color: #0165E1;"></i></a></li>
+              <li><a href="https://www.instagram.com/salty.wan/" target="_blank"><i class="fa-brands fa-instagram"
+                    style="color: #fb3958;"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/thanapol-popit-97883a190/" target="_blank"><i
+                    class="fa-brands fa-linkedin" style="color: #0072b1;"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="xpbg" id="xph">
+    <div class="xp">
+      <div class="xppan" data-aos="flip-up" data-aos-delay="100">
+        <h1>My Experiences and Skills</h1>
+      </div>
+      <div class="xpcon" data-aos="flip-right" data-aos-delay="100">
+        <div>
+          <div class="seltab xp-a" data-aos="zoom-out" data-aos-delay="100">
+            <p class="elem active" onclick="activate('expcon')">Experiences</p>
+            <p class="elem" onclick="activate('skcon')">Skills</p>
+            <p class="elem" onclick="activate('educon')">Education</p>
+          </div>
+          <div class="xp-b" data-aos="fade-up" data-aos-delay="100">
+            <div class="tabcon activecon" id="expcon">
+              <div class="tab-item">
+                <h3>Discovery Piscine</h3>
+                <h4>2022</h4>
+                <ul>
+                  <li><i class="fa-solid fa-angle-right"></i>Unix Shell and WSL </li>
+                  <li><i class="fa-solid fa-angle-right"></i>HTML, CSS, and JS Basics</li>
+                  <li><i class="fa-solid fa-angle-right"></i>Learn to collaborate with other people</li>
+                </ul>
+                <p><em>42Bangkok, KMITL</em></p>
+              </div>
+              <div class="tab-item">
+                <h3>K-Engineering Workshop</h3>
+                <h4>Sometime ago in 2021</h4>
+                <ul>
+                  <li><i class="fa-solid fa-angle-right"></i>Computer: Trying an Arduino Uno using Tinkercad</li>
+                  <li><i class="fa-solid fa-angle-right"></i>IOT: Making a simple website using HTML, CSS </li>
+                  <li><i class="fa-solid fa-angle-right"></i>Software: C programming and HTML, CSS</li>
+                </ul>
+                <p><em>Engineering Faculty, KMITL</em></p>
+              </div>
+              <div class="tab-item">
+                <h3>CSCAMP 14</h3>
+                <h4>7-11 June 2022</h4>
+                <ul>
+                  <li><i class="fa-solid fa-angle-right"></i>Learn Java</li>
+                  <li><i class="fa-solid fa-angle-right"></i>Creating a final team project with Java</li>
+                </ul>
+                <p><em>Science Faculty, KMITL</em></p>
+              </div>
+            </div>
+
+            <div class="tabcon" id="skcon">
+              <div class="icon"><img src="../assets/images/bash.png">
+                <h3>Bash</h3>
+              </div>
+              <div class="icon"><img src="../assets/images/python.png">
+                <h3>Python</h3>
+              </div>
+              <div class="icon"><img src="../assets/images/c.png">
+                <h3>C</h3>
+              </div>
+              <div class="icon"><img src="../assets/images/js.png">
+                <h3>Javascript</h3>
+              </div>
+              <div class="icon"><img src="../assets/images/html.png">
+                <h3>HTML</h3>
+              </div>
+              <div class="icon"><img src="../assets/images/css.png">
+                <h3>CSS</h3>
+              </div>
+            </div>
+
+            <div class="tabcon" id="educon">
+              <div class="edu">
+                <div>
+                  <h3>High School: Sci & Math</h3>
+                  <h4>2020-Present</h4>
+                  <h4>Assumption Samutprakarn</h4>
+                </div>
+                <img src="../assets/images/Logo_ACSP.png">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="contactbg" id="contacth">
+    <div class="contact" data-aos="fade-down" data-aos-delay="100">
+      <div class="contactpan" data-aos="zoom-out" data-aos-delay="100">
+        <h1>Contact Me</h1>
+      </div>
+      <div class="contactcon" data-aos="fade-up-right" data-aos-delay="100">
+        <div>
+          <div>
+            <h2>
+              Feel free to contact me by sending the form below. <br>
+            </h2>
+            <form action="https://formspree.io/f/meqnydro" method="POST" class="form-control-outer">
+              <input type="email" name="email" class="form-control" placeholder="Email">
+              <input class="form-control" type="subject" name="subject" placeholder="Subject">
+              <textarea class="form-control-m" name="message" rows="5" placeholder="Message" required></textarea>
+              <button type="submit" class="form-btn">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="footer">
+      <h2 class="ft-title">UwUScript</h2>
+      <p class="ft-info">Copyright &copy; 2022 UwUScript. All Rights Reserved.</p>
+      <ul class="social-icon" data-aos="zoom-out" data-aos-delay="100">
+        <li><a href="https://github.com/Saltywan/" target="_blank"><i class="fa-brands fa-github"
+              style="color: white;"></i></a></li>
+        <li><a href="https://www.facebook.com/wan5TH" target="_blank"><i class="fa-brands fa-facebook"
+              style="color: #0165E1;"></i></a></li>
+        <li><a href="https://www.instagram.com/salty.wan/" target="_blank"><i class="fa-brands fa-instagram"
+              style="color: #fb3958;"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/thanapol-popit-97883a190/" target="_blank"><i
+              class="fa-brands fa-linkedin" style="color: #0072b1;"></i></a></li>
+      </ul>
+
+    </div>
+  </footer>
+
+  <button onclick="topFunction()" class="rainbow_animated" id="backtoTop" title="Go to top">
+    <div class="backtoTopRe">
+      <i class="fa-sharp fa-solid fa-arrow-up" aria-hidden="true"></i>
+    </div>
+
+  </button>
+
+
 </body>
+
 </html>

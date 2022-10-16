@@ -1,13 +1,278 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style.css" rel="stylesheet">
-    <title>thpopit's Resume</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="../assets/images/favicon.png">
+  <link href="style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <!-- aos
+    library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="index.js" defer></script>
+  <title>posoontr's Resume</title>
 </head>
-<body>
-    
+
+<body onload="checkCookie()">
+  <header data-aos="fade-down" data-aos-delay="100">
+    <h1>posoontr</h1>
+    <nav>
+      <a class="h_home hl" href="#h_home">Home</a>
+      <a class="h_about hl" href="#h_about">About</a>
+      <a class="h_exp hl" href="#h_exp">Experience</a>
+      <a class="h_contact hl" href="#h_contact">Contact</a>
+      <a href="../index.html"> <i class="fa-solid fa-circle-right"></i> </a>
+    </nav>
+  </header>
+
+  <section class="hero" id="h_home">
+    <div class="container-ma">
+
+
+      <div class="roww">
+        <div class="columnn" data-aos="zoom-in" data-aos-delay="100">
+          <div class="hero-text">
+            <h1 class="hero-title">Hi, </h1>
+            <h1 class="hero-title">I'm Pollapat Soontreewong</h1>
+            <div class="hero-title-description-outer">
+              <h2 class="hero-title-description">Secondary 6</h2>
+            </div>
+
+          </div>
+        </div>
+        <div class="columnn" data-aos="zoom-in" data-aos-delay="100">
+          <div class="hero-pic">
+            <img src="../assets/images/dev.gif" class="hero-image">
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="h_about">
+    <div class="container-i">
+      <div class="row-i">
+        <div class="column-i1">
+          <div class="menu" data-aos="fade-right" data-aos-delay="100">
+            <p class="menu-text">About</h1>
+          </div>
+
+        </div>
+        <div class="column-i2">
+          <div class="about-warp">
+            <div class="about-text">
+              <div class="about-text-center">
+                <div data-aos="fade-left" data-aos-delay="100">
+                  <p class="at-title">I'm a highschool student who interested in Technology.</p>
+                  <p class="at-info">
+                    Hi, I'm force. I'm studying in Secondary 6, Math-Sci faculty. I'm a duck person, introvert
+                    personality. My dream is go to study at Computer Engineering field. <br>
+                  </p>
+                </div>
+                <div data-aos="fade-left" data-aos-delay="100">
+                  <p class="at-title">Information</p>
+                  <p class="at-info">Here is my information about myself for business contact.</p>
+                  <p class="at-info"><span class="text-white">Name:</span> Pollapat Soontreewong</p>
+                  <p class="at-info"><span class="text-white">Email:</span> pollapat13799@gmail.com</p>
+                  <p class="at-info"><span class="text-white">Phone:</span> +66982867xxx</p>
+                  <p class="at-info"><span class="text-white">Birthday:</span> 19 July 2003</p>
+                </div>
+                <br>
+                <ul class="ftco-footer-social" data-aos="fade-left" data-aos-delay="100">
+                  <li><a href="https://twitter.com/buyyakhoo"><span class="fa-brands fa-twitter"></span></a></li>
+                  <li><a href="https://www.facebook.com/f0s31E/"><span class="fa-brands fa-facebook"></span></a></li>
+                  <li><a href="https://www.instagram.com/force_force_forcee/"><span
+                        class="fa-brands fa-instagram"></span></a>
+                  </li>
+                  <li><a href="https://github.com/buyyakhoo"><span class="fa-brands fa-github"></span></a></li>
+                </ul>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--   resume -->
+  <section class="exp" id="h_exp">
+    <div class="container-i">
+      <div class="row-i">
+        <div class="column-i1">
+          <div class="menu" data-aos="fade-right" data-aos-delay="100">
+            <p class="menu-text">Experience</h1>
+          </div>
+
+        </div>
+        <div class="column-i2">
+          <div class="exp-warp">
+            <div class="exp-text">
+              <div class="exp-text-center">
+                <!--                 <p class="et-info">
+                  We have to learn from experience to use it for real life.
+                </p> -->
+                <div class="tabcon" id="expcon" data-aos="fade-left" data-aos-delay="100">
+                  <h1 class="et-title">Education</h1>
+                  <h2 class="et-bold">Science-Mathematics Faculty (AI Major Subject)</h2>
+                  <p>2020-2022 @ACSP</p>
+                  <p class="et-info">I'm interesting for studying the technology because it's changed many things in our
+                    world. I see the technology as a good opportunities to learn, many company are interesting the
+                    people who have the technology skills. </p>
+                </div>
+
+                <div class="tabcon" id="expcon" data-aos="fade-left" data-aos-delay="100">
+                  <h1 class="et-title">Professional Experience</h1>
+                  <h2 class="et-bold">K-Engineering Workshop</h2>
+                  <p>6-7 November 2021 @Online from KMITL Engineering Faculty</p>
+                  <ul class="et-info">
+                    <li>Computer: Trying an Arduino Uno using Tinkercad</li>
+                    <li>IOT: Making a simple website using HTML, CSS </li>
+                    <li>Software Engineering: C programming and HTML, CSS</li>
+                  </ul>
+                </div>
+
+                <div class="tabcon" id="expcon" data-aos="fade-left" data-aos-delay="100">
+                  <h2 class="et-bold">COMCAMP 33</h2>
+                  <p>10-16 April 2022 @Online from Computer Engineering, KMUTT</p>
+                  <ul class="et-info">
+                    <li>Learning C, Python, and Website</li>
+                    <li>Creating a final project with C language </li>
+                  </ul>
+                </div>
+
+                <div class="tabcon" id="expcon" data-aos="fade-left" data-aos-delay="100">
+                  <h2 class="et-bold">CSCAMP 14</h2>
+                  <p>7-11 June 2022 @Online from Science Faculty, KMITL</p>
+                  <ul class="et-info">
+                    <li>Learning Java</li>
+                    <li>Creating a final project with Java language </li>
+                  </ul>
+                </div>
+
+
+
+                <div class="tabcon" id="expcon" data-aos="fade-left" data-aos-delay="100">
+                  <h2 class="et-bold">42BKK Discovery Piscine for High School</h2>
+                  <p>10-19 October 2022 @Online</p>
+                  <ul class="et-info">
+                    <li>Use shell with Ubuntu shell (WSL).</li>
+                    <li>Learn the basic website.</li>
+                    <li>Rush project.</li>
+                    <li>Free to learn.</li>
+                  </ul>
+                </div>
+
+                <div class="tabcon" id="expcon" data-aos="fade-left" data-aos-delay="100">
+                  <h1 class="et-title">Skills</h1>
+
+                  <p class="et-info">
+                    Valuable skills come from practice.
+                  </p>
+                  <div class="tabcon-ic" id="skcon">
+                    <div class="icon"><img src="../assets/images/bash.png">
+                      <h3>Bash</h3>
+                    </div>
+                    <div class="icon"><img src="../assets/images/python.png">
+                      <h3>Python</h3>
+                    </div>
+                    <div class="icon"><img src="../assets/images/c.png">
+                      <h3>C</h3>
+                    </div>
+                    <div class="icon"><img src="../assets/images/js.png">
+                      <h3>Javascript</h3>
+                    </div>
+                    <div class="icon"><img src="../assets/images/html.png">
+                      <h3>HTML</h3>
+                    </div>
+                    <div class="icon"><img src="../assets/images/css.png">
+                      <h3>CSS</h3>
+                    </div>
+                  </div>
+
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="h_contact">
+    <div class="container-i">
+      <div class="row-i">
+        <div class="column-i1">
+          <div class="menu" data-aos="fade-right" data-aos-delay="100">
+            <p class="menu-text">Contact</h1>
+          </div>
+
+        </div>
+        <div class="column-i2">
+          <div class="contact-warp">
+            <div class="contact-text">
+              <div class="contact-text-center" data-aos="fade-left" data-aos-delay="100">
+                <p class="ct-title">For business</p>
+                <p class="ct-info">
+                  Feel free to contact me by sending the form below. <br>
+                </p>
+                <form action="https://formspree.io/f/mzbonwjb" method="POST" class="form-control-outer">
+                  <input type="email" name="email" class="form-control" placeholder="Email">
+                  <input class="form-control" type="subject" name="subject" placeholder="Subject">
+                  <textarea class="form-control-m" name="message" rows="5" placeholder="Message" required></textarea>
+                  <button type="submit" class="form-btn">Send Message</button>
+                </form>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <footer>
+    <div class="container-ma" data-aos="fade-up" data-aos-delay="100">
+      <h2 class="ft-title">UwUScript</h2>
+      <p class="ft-info">Copyright © 2022 UwUScript. All Rights Reserved.</p>
+      <div class="ftco-footer-social">
+        <div class="ftco-footer-social-control"><a href="https://twitter.com/buyyakhoo"><span
+              class="fa-brands fa-twitter"></span></a></div>
+        <div class="ftco-footer-social-control"><a href="https://www.facebook.com/f0s31E/"><span
+              class="fa-brands fa-facebook"></span></a></div>
+        <div class="ftco-footer-social-control"><a href="https://www.instagram.com/force_force_forcee/"><span
+              class="fa-brands fa-instagram"></span></a></div>
+        <div class="ftco-footer-social-control"><a href="https://github.com/buyyakhoo"><span
+              class="fa-brands fa-github"></span></a></div>
+      </div>
+    </div>
+  </footer>
+
+  <button onclick="topFunction()" id="backtoTop" title="Go to top">
+    <div class="backtoTopRe">
+      <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    </div>
+
+  </button>
+
+
 </body>
+
 </html>
