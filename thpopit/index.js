@@ -118,10 +118,6 @@ function aclick(){
   if (clck==3){
     clck=0;
     pics.setAttribute("src","../assets/images/rickroll-roll.gif");
-    setTimeout(cpf, 6000);
+    setTimeout(function(){pics.setAttribute("src", "../assets/images/r1ck.png");}, 6000);
   }
 }
-function cpf(){
-  pics.setAttribute("src", "../assets/images/r1ck.png")
-}
-

@@ -51,11 +51,20 @@ h1{
     box-shadow: 15px 15px grey;
 }
 
-h1:hover{
-    text-decoration: underline;
-    transform: scale(1.1);
+h1:after{
+  background: linear-gradient(280deg,#30b6df 30%,#9346ec 50%,#e33b70 70%,#dfae4e 94%);
+  position: absolute;
+  bottom: 5px;
+  content: "";
+  height: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all .5s;
+  width: 0;
 }
-
+h1:hover:after{
+  width: 95%;
+}
 h2{
   font-size: 2rem;
 }
@@ -99,7 +108,14 @@ button:hover:after{
   width: 70%;
 }
 
-button:hover{
-  transform: scale(1.125);
+#clock{
+  font-size: 2rem;
 }
+
+.rainbow_animated {
+    background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
+    animation: rainbow_animation 10s ease-in-out infinite;
+    background-size: 400% 100%;
+}
+
          

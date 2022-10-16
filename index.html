@@ -8,6 +8,23 @@
   <link rel="icon" href="assets/images/favicon.png">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    function startTime() {
+      const today = new Date();
+      let h = today.getHours();
+      let m = today.getMinutes();
+      let s = today.getSeconds();
+      m = checkTime(m);
+      s = checkTime(s);
+      document.getElementById('clock').innerHTML =  h + ":" + m + ":" + s;
+      setTimeout(startTime, 1000);
+    }
+    
+    function checkTime(i) {
+      if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+      return i;
+    }
+</script>
   <script defer>
     window.addEventListener('load', () => {
       AOS.init({
@@ -16,6 +33,7 @@
         once: true,
         mirror: false
       })
+      startTime();
     });
   </script>
   <link href="style.css" rel="stylesheet">
@@ -25,19 +43,15 @@
 <body>
   <div class="main">
     <h1 data-aos="zoom-out" data-aos-delay="100">42Bangkok</h1>
-    <h2 data-aos="zoom-out" data-aos-delay="100">Rush-42BKK</h2>
+    <marquee width="40%" direction="right">
+      <h2 data-aos="zoom-out" data-aos-delay="100">Rush-42BKK</h2>
+    </marquee>
     <div class="main-pro">
       <button onclick="location.href='thpopit/index.html'" data-aos="zoom-out" data-aos-delay="50">thpopit</button>
       <button onclick="location.href='psoontr/index.html'" data-aos="zoom-out" data-aos-delay="50">posoontr</button>
     </div>
-
+    <p id="clock"></p>
   </div>
-
-
-  <!-- unpkg -->
-  <script src="https://unpkg.com/@barba/core"></script>
-  <!-- jsdelivr -->
-  <script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
 
 </body>
 

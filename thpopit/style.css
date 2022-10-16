@@ -52,7 +52,7 @@ header h1 {
   display: flex;
   background-color: transparent;
   font-size: calc(0.25rem + 40px);
-  margin: 0px 2vw;
+  margin: 0px 0px;
   
 }
 
@@ -658,7 +658,8 @@ width: 80%;
 
 .social-icon{
   text-align: center;
-  margin:0;
+  margin: 0;
+  width: 100%;
 }
 .social-icon li{
   width:fit-content;
@@ -843,7 +844,7 @@ width: 80%;
     flex-direction: column;
   }
   header h1 {
-    font-size: 1.85rem;
+    font-size: 1.55rem;
     flex: 3;
     justify-content: center;
   }
@@ -852,6 +853,9 @@ width: 80%;
     font-size: 1.15rem;
     align-items: center;
     justify-content: center;
+  }
+  header nav a{
+    padding: 8px;
   }
   .maincon{
     top: 5%;
