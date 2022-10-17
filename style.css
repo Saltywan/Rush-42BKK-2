@@ -112,10 +112,5 @@ button:hover:after{
   font-size: 2rem;
 }
 
-.rainbow_animated {
-    background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
-    animation: rainbow_animation 10s ease-in-out infinite;
-    background-size: 400% 100%;
-}
 
          
